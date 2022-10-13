@@ -1,9 +1,9 @@
-
-def print_hi(name):
-
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
+from Service import user_service as serv
+from Items import user
 
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    oleg = user.User('Olleg90', '$#jklfh90', 'admin', 'oleg', 'Skorodielov', 'skorodelov90@gmail.com')
+    s = serv.UserService()
+    s.add(oleg)
+
 
